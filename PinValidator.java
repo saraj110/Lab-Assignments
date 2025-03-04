@@ -10,9 +10,9 @@ public class PinValidator{
 
 		if (pin.length()==4 && pin.matches("%d")){
                     
-			return  pin.equals(BankingSystem.storedPin);
+			return  true;
 		                                         }
-		return true;
+		return pin.equals(BankingSystem.storedPin);
 			                           }
 		
 	                    }
